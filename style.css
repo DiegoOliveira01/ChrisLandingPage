@@ -1,0 +1,170 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+body {
+  background-color: #e8ecee;
+  color: #3d5a80;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Container central */
+.container {
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Logo circular */
+.logo {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 320px;
+  height: auto;
+}
+
+/* Títulos */
+.titulo {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.footer{
+  font-size: 1.0rem;
+  margin-top: 60px;
+}
+
+/* Botões */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 2px solid #c8c5d4;
+  border-radius: 12px;
+  background-color: transparent;
+  color: #3d5a80;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c8c5d4;
+  color: #fff;
+}
+
+.btn img {
+  width: 22px;
+  height: 22px;
+}
+
+/* Seção Gestalt */
+.gestalt-section {
+  background: linear-gradient(135deg, #e8ecee, #2e687242, #edf2f4);
+  padding: 60px 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  color: #3d5a80;
+  
+}
+
+.gestalt-section h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.gestalt-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Botão voltar */
+.voltar {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.gestalt-section h2 {
+  font-size: 1.4rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.gestalt-section ul {
+  list-style: disc inside;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  padding-left: 0;
+}
+
+.gestalt-section li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Sub-seções fofinhas */
+.subsecao {
+  background-color: #ffffff00; /* leve transparência */
+  padding: 25px 20px;
+  border-radius: 16px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: left;
+  max-width: 700px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.subsecao:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.subsecao h1,
+.subsecao h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.subsecao p,
+.subsecao ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.subsecao ul {
+  list-style: disc inside;
+  margin-top: 10px;
+}
