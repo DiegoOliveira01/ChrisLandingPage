@@ -1,10 +1,31 @@
 /* Reset básico */
+
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("fonts/CaviarDreams.woff2") format("woff2"),
+       url("fonts/CaviarDreams.woff") format("woff"),
+       url("fonts/CaviarDreams.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Caviar Dreams Bold";
+  src: url("fonts/CaviarDreams.woff2") format("woff2"),
+       url("fonts/CaviarDreams.woff") format("woff"),
+       url("fonts/CaviarDreams_Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Georgia", serif;
+  font-family: "Caviar Dreams Bold", serif;
 }
+
+
 
 body {
   background-color: #e8ecee;
@@ -112,6 +133,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  margin-bottom: 60px;
 }
 
 .gestalt-section h2 {
@@ -167,4 +189,14 @@ body {
 .subsecao ul {
   list-style: disc inside;
   margin-top: 10px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;  /* centraliza no eixo horizontal */
+  margin-top: 30px;
+}
+.img-container img {
+  max-width: 100%;
+  height: auto;
 }
